@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Login — Birthday Surprise</title>
+  </head>
+
+  <body class="login romantic">
+    <div class="login_container">
+      <h2>Hai yayy, login dulu yaaa</h2>
+      <form id="loginForm" class="login_form" autocomplete="on">
+        <label for="username" class="sr-only">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
+          autocomplete="username"
+          required
+        />
+
+        <div class="password-field">
+          <label for="password" class="sr-only">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            autocomplete="current-password"
+            required
+          />
+          <button
+            type="button"
+            class="toggle-password"
+            aria-label="Show password"
+          >
+            👁
+          </button>
+        </div>
+
+        <button type="submit" id="loginBtn">Masuk 💕</button>
+      </form>
+      <p class="login_description">
+        Pssst... username dan passwordnya sama: <b>"user"</b> 😉
+      </p>
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Main JS -->
+    <script type="application/javascript" src="./scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Happy Birthday!</title>
+  </head>
+
+  <body>
+    <!-- Audio (no autoplay attribute: we'll ask permission via SweetAlert) -->
+    <audio class="song" loop>
+      <source src="./music/lover.m4a" type="audio/mp4" />
+      Your browser can't play our lovely song.
+    </audio>
+
+    <div class="container" role="main" aria-labelledby="title">
+      <div class="one">
+        <h1 class="one" id="title">
+          Hi, my love! 💕 <span id="name">Dina Nur Fadhilah</span>
+        </h1>
+        <p class="two" id="greetingText">
+          Hari ini bukan sekadar hari, ini perayaan dirimu yang membuat hidupku
+          lengkap.
+        </p>
+      </div>
+
+      <div class="three">
+        <p>It's your 20th birthday!! 🎂</p>
+      </div>
+
+      <div class="four">
+        <div class="text-box" aria-live="polite">
+          <p class="hbd-chatbox">
+            Selamat ulang tahun, yayy! 🎉 Semoga kamu merasakan betapa
+            istimewanya dirimu bagi kami semua hari ini. Semoga di umur kamu ke
+            20 ini dipenuhi dengan sukacita, tawa, dan berkah yang tak terhitung
+            jumlahnya. Semoga semua harapanmu terwujud, dan semoga kamu terus
+            bersinar terang, menginspirasi kita semua.
+          </p>
+          <p
+            class="fake-btn"
+            role="button"
+            tabindex="0"
+            aria-label="Send wishes"
+          >
+            Send your wishes ✨
+          </p>
+        </div>
+      </div>
+
+      <div class="five">
+        <p class="idea-1">
+          Di setiap detik hari ini, aku berterima kasih karena ada kamu.
+        </p>
+        <p class="idea-2">
+          Kamu adalah tempatku pulang — hangat, aman, dan penuh cinta.
+        </p>
+        <p class="idea-3">
+          Hari ini aku merayakan seluruh kebaikan yang kau bawa ke dunia ini.
+          <br /><strong>Forever and always.</strong>
+        </p>
+        <p class="idea-4">Karena,</p>
+        <p class="idea-5">Kamu sangat spesial untukku</p>
+        <p class="idea-6">
+          <span>L</span><span>O</span><span>V</span><span>E</span>
+        </p>
+      </div>
+
+      <div class="six">
+        <img
+          src="./img/ayang.png"
+          alt="Foto Ayang"
+          class="profile-picture"
+          id="imagePath"
+        />
+        <img src="img/hat.svg" alt="Hat" class="hat" />
+        <div class="wish">
+          <h3 class="wish-hbd">Happy Birthday, My Love!</h3>
+          <h5 class="wish-text">
+            On your special day, I wish every dream in your heart comes true
+            with me by your side.
+          </h5>
+        </div>
+      </div>
+
+      <div class="seven">
+        <div class="ballons" aria-hidden="true">
+          <!-- duplicate svg/PNG balloon images as in your original -->
+          <img src="img/ballon2.svg" alt="Balloon" />
+          <img src="img/ballon1.svg" alt="Balloon" />
+          <img src="img/ballon3.svg" alt="Balloon" />
+          <!-- ... you can keep repeating as desired -->
+        </div>
+      </div>
+
+      <div class="eight" aria-hidden="true">
+        <!-- decorative expanding circles -->
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" /></svg>
+      </div>
+
+      <div class="nine">
+        <p>Okay, now come back and tell me if you liked it.</p>
+        <p id="replay" tabindex="0" role="button">
+          Or you can click here if you want to see it again.
+        </p>
+        <p class="last-smile">😊</p>
+      </div>
+    </div>
+
+    <!-- GSAP (v3) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Main JS -->
+    <script type="application/javascript" src="./scripts/birthday.js"></script>
+  </body>
+</html>
